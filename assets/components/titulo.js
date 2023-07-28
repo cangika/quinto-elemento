@@ -11,10 +11,7 @@ export class Titulo extends LitElement {
                 font-style: normal;
                 font-weight: 800;
                 
-                background: linear-gradient(90deg, #102981 0%, #0A1C3A 55.21%, #102981 100%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: black;
             }
         `
     ];

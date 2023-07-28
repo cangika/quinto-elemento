@@ -11,6 +11,7 @@ export const section = css`
                 justify-content: center;
                 align-items: center;
                 flex-shrink: 0;
+                margin: 0;
 
                 overflow: hidden;
                 /* position: relative; */

@@ -11,9 +11,13 @@ export class DepoimentosSection extends LitElement {
                 flex-shrink: 0;
             }
 
-            span {
-                color: black;
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
             }
+            
 
             aside {
                 display: flex;
@@ -38,21 +42,16 @@ export class DepoimentosSection extends LitElement {
                 gap: 25px;
             }
 
-            .titulo {
-                color: #000;
-                text-align: center;
-                font-size: 18px;
-                font-style: normal;
+            article app-paragrafo:first-child {
                 font-weight: 600;
-                line-height: normal;
             }
 
             .descricao {
-                justify-content: center;
-                align-items: center;
-                flex-shrink: 0;
-                font-size: 13px;
                 text-align: center;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
             }
 
             app-titulo {
@@ -61,13 +60,13 @@ export class DepoimentosSection extends LitElement {
                 height: 77px;
                 justify-content: flex-end;
                 align-items: center;
+                text-align: center;
 
                 position: absolute;
                 left: 39px;
                 top: 27px;
-
                 font-size: 28px;
-
+                color: white;
             }
 
             app-quadro {
@@ -87,6 +86,7 @@ export class DepoimentosSection extends LitElement {
             app-forma {
                 position: absolute;
                 top: 0px;
+                z-index: -10;
                 
             }
 
@@ -110,17 +110,17 @@ export class DepoimentosSection extends LitElement {
                     <img src="fermentech.png" alt="fermentech-depoimentos" />
                 </app-quadro>
                 <article>
-                    <app-paragrafo class="titulo">
-                        Fermentech
-                    </app-paragrafo>
+                    <app-paragrafo>Fermentech</app-paragrafo>
                     <app-paragrafo class="descricao">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
                     </app-paragrafo>
                 </article>
             </aside>
-            
-            <app-forma></app-forma>
         </section>
+
+        <div>
+            <app-forma></app-forma>
+        </div>
         
         `;
     }

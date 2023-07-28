@@ -11,7 +11,7 @@ export class Paragrafo extends LitElement {
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: normal;
+                line-height: 100%;
             }
         `
     ];
