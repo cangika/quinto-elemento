@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 
-export class ServiçOsPage extends LitElement {
+export class HomePage extends LitElement {
     static styles = [
         css`
             :host {
@@ -13,4 +13,4 @@ export class ServiçOsPage extends LitElement {
         return html``;
     }
 }
-customElements.define('serviços-page', ServiçOsPage);
+customElements.define('home-page', HomePage);

@@ -4,13 +4,12 @@ export class Titulo extends LitElement {
     static styles = [
         css`
             :host {
-                display: block;
+                display: flex;
                
                 font-family: var(--fonte-corpo);
                 font-size: 50px;
                 font-style: normal;
                 font-weight: 800;
-                line-height: 65px; /* 130% */
                 
                 background: linear-gradient(90deg, #102981 0%, #0A1C3A 55.21%, #102981 100%);
                 background-clip: text;
