@@ -12,6 +12,7 @@ export const section = css`
                 align-items: center;
                 flex-shrink: 0;
                 margin: 0;
+                padding: 1rem;
 
                 overflow: hidden;
                 /* position: relative; */

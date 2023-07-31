@@ -6,9 +6,11 @@ export class DepoimentosSection extends LitElement {
         section,
         css`
             section {
+                width: 100%;
                 justify-content: center;
                 align-items: center;
                 flex-shrink: 0;
+                gap: 40px;
             }
 
             div {
@@ -54,15 +56,26 @@ export class DepoimentosSection extends LitElement {
                 line-height: normal;
             }
 
+            .clientes {
+                display: flex;
+                width: 97px;
+                height: 28px;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+            }
+
             app-titulo {
                 display: flex;
-                width: 282px;
+                width: 100%;
                 height: 77px;
                 justify-content: flex-end;
                 align-items: center;
                 text-align: center;
+                flex-shrink: 0;
+                padding-bottom: 40px;
 
-                position: absolute;
+                /* position: absolute; */
                 left: 39px;
                 top: 27px;
                 font-size: 28px;
@@ -103,11 +116,12 @@ export class DepoimentosSection extends LitElement {
     render() {
         return html`
         <section>
-            <app-titulo><span>Depoimentos de nossos clientes</span></app-titulo>
+       
+            <app-titulo>Depoimentos de nossos clientes</app-titulo>
             
             <aside>
                 <app-quadro>
-                    <img src="fermentech.png" alt="fermentech-depoimentos" />
+                    <img src="fermentech.png" alt="fermentech-depoimentos">
                 </app-quadro>
                 <article>
                     <app-paragrafo>Fermentech</app-paragrafo>
@@ -115,12 +129,17 @@ export class DepoimentosSection extends LitElement {
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
                     </app-paragrafo>
                 </article>
-            </aside>
-        </section>
-
-        <div>
+                 <div>
             <app-forma></app-forma>
         </div>
+            </aside>
+            <app-quadro class="clientes">
+                <img src="fermentech.png" alt="fermentech-depoimentos">
+            </app-quadro>
+
+           
+        
+        </section>
         
         `;
     }
