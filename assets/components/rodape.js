@@ -5,7 +5,9 @@ export class Rodape extends LitElement {
         css`
             :host {
                 display: block;
-                overflow: hidden;
+                overflow-y: visible;
+                overflow-x: clip;
+                position: relative;
                 
             }
 
@@ -61,7 +63,7 @@ export class Rodape extends LitElement {
                 width: 360px;
                 height: 101px;
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start;
                 gap: 19px;
             }
 
@@ -90,7 +92,9 @@ export class Rodape extends LitElement {
             }
 
             app-forma2 {
-                position: inherit;
+                position: absolute;
+                bottom: 0;
+                left: 0;
                 z-index: -10;
             }
         `
@@ -102,10 +106,13 @@ export class Rodape extends LitElement {
         <footer>
             <app-forma2></app-forma2>
 
-            <article>
-                <app-paragrafo class="titulo">Alguma dúvida?</app-paragrafo>
-                <app-paragrafo>Fale com um de nossos especialistas.</app-paragrafo>
-            </article>
+            <aside>
+                <article>
+                    <app-paragrafo class="titulo">Alguma dúvida?</app-paragrafo>
+                    <app-paragrafo>Fale com um de nossos especialistas.</app-paragrafo>
+                </article>
+                <app-botao></app-botao>
+            </aside>
             <aside class="contatos">
                 <app-line></app-line>
                 <article>

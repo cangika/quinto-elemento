@@ -15,6 +15,6 @@ export const section = css`
                 padding: 1rem;
 
                 overflow: hidden;
-                /* position: relative; */
+                position: relative;
             }
         `;

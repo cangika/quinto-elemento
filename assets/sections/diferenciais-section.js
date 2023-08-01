@@ -7,10 +7,6 @@ export class DiferenciaisSection extends LitElement {
         css`
             :host {
                 display: flex;
-            }
-
-            section {
-
                 padding: 0px 23px;
                 flex-direction: column;
                 justify-content: center;
@@ -71,7 +67,7 @@ export class DiferenciaisSection extends LitElement {
 
     render() {
         return html`
-        <section>
+        
             <app-titulo>Nossos Diferenciais</app-titulo>
             <aside>
                 <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
@@ -96,7 +92,7 @@ export class DiferenciaisSection extends LitElement {
                     <app-paragrafo>Soluções Personalizadas</app-paragrafo>
                 </article>
             </aside>
-        </section>
+        
         
         `;
     }

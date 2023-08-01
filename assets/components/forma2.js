@@ -5,12 +5,12 @@ export class Forma2 extends LitElement {
         css`
             :host {
                 display: block;
-               
+                width: 548.685px;
+                height: 452.188px;
             }
 
             svg {
-                width: 548.685px;
-                height: 452.188px;
+                
                 flex-shrink: 0;
 
                 position: absolute;

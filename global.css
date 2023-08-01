@@ -1,4 +1,15 @@
 :root {
 
+    --cor-origem: #0C1C53;
+    --cor-secundaria: #0A32BE;
+    --tom-1: #47B7E9;
+    --tom-2: #003662;
+    --tom-logo-escuro: #0A1C39;
+    --tom-logo-claro: #00B9E9;
+
     --fonte-corpo: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0 auto;
 }
