@@ -6,4 +6,6 @@ export * from './components/forma2'
 export * from './components/quadro'
 
 export * from './sections/introdução-section'
+export * from './sections/headtrainer-section'
+export * from './sections/diferenciais-section'
 export * from './sections/depoimentos-section'
