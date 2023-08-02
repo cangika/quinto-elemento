@@ -16,6 +16,9 @@ export class Rodape extends LitElement {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 10px;
+                padding-top: 30px;
+
+                background: linear-gradient(65deg, #0A1C3A 0%, #102981 100%);
             }
 
             span {
@@ -49,6 +52,7 @@ export class Rodape extends LitElement {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 23px;
+                padding: 0px 10px;
             }
 
             article {
@@ -65,6 +69,7 @@ export class Rodape extends LitElement {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 19px;
+                padding: 0px 10px;
             }
 
             nav {
@@ -97,6 +102,45 @@ export class Rodape extends LitElement {
                 left: 0;
                 z-index: -10;
             }
+
+            a, button {
+                color: white;
+                text-decoration: none;
+                opacity: 0.9;
+                font-family: var(--fonte-corpo);
+                font-size: 0.75rem;
+
+                cursor: pointer;
+                transition: color 300ms;
+            }
+
+            a:hover, button:hover {
+                color: var(--tom-1)
+            }
+
+            a:active, button:active {
+                color: var(--cor-primaria)
+            }
+
+            button {
+                padding: 0;
+                border: 0;
+                background: transparent;
+            }
+
+            @media (min-width: 1024px) {
+                footer {
+                    width: 100%;
+                }
+                span {
+                    width: 100%;
+                    justify-content: center;
+                }
+
+                aside {
+                    justify-content: center;
+                }
+            }
         `
     ];
 
@@ -104,14 +148,14 @@ export class Rodape extends LitElement {
         return html`
 
         <footer>
-            <app-forma2></app-forma2>
+            <!-- <app-forma2></app-forma2> -->
 
             <aside>
                 <article>
                     <app-paragrafo class="titulo">Alguma dúvida?</app-paragrafo>
                     <app-paragrafo>Fale com um de nossos especialistas.</app-paragrafo>
                 </article>
-                <app-botao></app-botao>
+                <app-botao><a href="">Fale conosco</a></app-botao>
             </aside>
             <aside class="contatos">
                 <app-line></app-line>
@@ -123,12 +167,12 @@ export class Rodape extends LitElement {
             </aside>
             <aside>
                 <nav>
-                    <app-paragrafo class="navbar">Home</app-paragrafo>
-                    <app-paragrafo class="navbar">Somos a QE</app-paragrafo>
-                    <app-paragrafo class="navbar">Serviços</app-paragrafo>
-                    <app-paragrafo class="navbar">Materiais gratuitos</app-paragrafo>
-                    <app-paragrafo class="navbar">Insight blog</app-paragrafo>
-                    <app-paragrafo class="navbar">Contato</app-paragrafo>
+                    <a href ="/" class="navbar">Home</a>
+                    <a href ="" class="navbar">Somos a QE</a>
+                    <a href ="" class="navbar">Serviços</a>
+                    <a href ="" class="navbar">Materiais gratuitos</a>
+                    <a href ="" class="navbar">Insight blog</a>
+                    <a href ="" class="navbar">Contato</a>
                 </nav>
                 
                 <span>

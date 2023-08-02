@@ -66,7 +66,33 @@ export class ServicosSection extends LitElement {
                 align-items: center;
                 flex-shrink: 0;
                 border-radius: 0px 7px 7px 0px;
+            }
 
+            img {
+                height: 120%;
+            }
+
+             swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+
+            swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media (min-width: 1024px) {
+                app-titulo {
+                    font-size: 38px;
+                }
+
+                app-quadro {
+                    width: 265px;
+                    height: 520px;
+                    border-radius: 8px;
+                }
             }
         `
     ];
@@ -74,7 +100,13 @@ export class ServicosSection extends LitElement {
     render() {
         return html`
         <section>
-            <app-quadro></app-quadro>
+            <app-quadro>
+                <swiper-container>
+                    <swiper-slide>
+                        <img class="imagem" loading="lazy" src="servicos-2.jpg" alt="serviços slider" >
+                    </swiper-slide>
+                </swiper-container>
+            </app-quadro>
             <aside>
                 <article>
                     <app-titulo>O que sua empresa precisa?</app-titulo>
@@ -82,7 +114,7 @@ export class ServicosSection extends LitElement {
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.
                     </app-paragrafo>
                 </article>
-                <app-botao></app-botao>
+                <app-botao><a href="">Ver serviços</a></app-botao>
             </aside>
         </section>
         

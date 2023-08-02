@@ -56,14 +56,14 @@ export class DepoimentosSection extends LitElement {
                 line-height: normal;
             }
 
-            .clientes {
+            /* .clientes {
                 display: flex;
                 width: 97px;
                 height: 28px;
                 justify-content: center;
                 align-items: center;
                 flex-shrink: 0;
-            }
+            } */
 
             app-titulo {
                 display: flex;
@@ -107,6 +107,10 @@ export class DepoimentosSection extends LitElement {
                 app-forma {
                     width: 100%;
                 }
+
+                app-titulo {
+                    justify-content: center;
+                }
             }
 
 
@@ -121,7 +125,7 @@ export class DepoimentosSection extends LitElement {
             
             <aside>
                 <app-quadro>
-                    <img src="fermentech.png" alt="fermentech-depoimentos">
+                    <img slot="imagem" src="fermentech.png" alt="fermentech-depoimentos">
                 </app-quadro>
                 <article>
                     <app-paragrafo>Fermentech</app-paragrafo>
@@ -133,9 +137,9 @@ export class DepoimentosSection extends LitElement {
             <app-forma></app-forma>
         </div>
             </aside>
-            <app-quadro class="clientes">
+            <!-- <app-quadro class="clientes">
                 <img src="fermentech.png" alt="fermentech-depoimentos">
-            </app-quadro>
+            </app-quadro> -->
 
            
         

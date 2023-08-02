@@ -17,7 +17,7 @@ export class Quadro extends LitElement {
     ];
 
     render() {
-        return html`<slot></slot>`;
+        return html`<slot name="imagem"></slot>`;
     }
 }
 customElements.define('app-quadro', Quadro);

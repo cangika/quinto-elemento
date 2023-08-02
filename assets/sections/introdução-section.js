@@ -63,6 +63,20 @@ export class IntroduçãOSection extends LitElement {
                 align-items: center;
                 flex-shrink: 0;
             }
+
+            @media (min-width: 1024px) {
+                app-titulo {
+                    font-size: 36px;
+                }
+
+                app-paragrafo {
+                    font-size: 22px;
+                }
+
+                app-quadro {
+                    width: 369px;
+                }
+            }
         `
     ];
 
@@ -70,11 +84,11 @@ export class IntroduçãOSection extends LitElement {
         return html`
         <section>
             <article>
-                <app-titulo>CRESÇA 2 ANOS EM 6 MESES!</app-titulo>
+                <app-titulo class="animate__animated animate__delay-6" data-toggle-class="animate__fadeInUp">CRESÇA 2 ANOS EM 6 MESES!</app-titulo>
                 <app-paragrafo>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</app-paragrafo>
             </article>
             <app-quadro>
-                <img src="icon inicio.jpg" alt="ilustração início">
+                <img slot="imagem" src="icon inicio.jpg" alt="ilustração início">
             </app-quadro>
         </section>
 

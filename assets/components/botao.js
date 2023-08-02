@@ -6,8 +6,9 @@ export class Botao extends LitElement {
             :host {
                 display: block;
             }
-
             ::slotted(button), button, ::slotted(a) {
+                width: inherit;
+
                 display: flex;
                 padding: 4px 18px;
                 justify-content: center;
@@ -26,6 +27,11 @@ export class Botao extends LitElement {
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+                white-space: nowrap;
+                text-decoration: none;
+
+                transition: all .2s;
+                cursor: pointer;
             }
         `
     ];

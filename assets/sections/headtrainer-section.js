@@ -72,6 +72,21 @@ export class HeadtrainerSection extends LitElement {
                 flex-shrink: 0;
 
             }
+
+            @media (min-width: 1024px) {
+                section {
+                    flex-direction: row;
+                }
+
+                app-paragrafo {
+                    font-size: 22px;
+                }
+
+                app-quadro {
+                    width: 500px;
+                    height: 500px;
+                }
+            }
         `
     ];
 
@@ -80,7 +95,7 @@ export class HeadtrainerSection extends LitElement {
 
         <section>
             <app-quadro>
-                <img src="head trainer.png" alt="head trainer">
+                <img slot="imagem" src="head trainer.png" alt="head trainer">
             </app-quadro>
             <aside>
                 <article>
